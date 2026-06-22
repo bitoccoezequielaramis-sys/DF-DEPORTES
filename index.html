@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DF DEPORTES</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>DF DEPORTES</h1>
+            <p>Equipamiento y accesorios para tu deporte favorito</p>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <button id="cartToggle" class="cart-btn">Carrito (<span id="cartCount">0</span>)</button>
+        </div>
+    </header>
+
+    <main id="boxproductos"></main>
+
+    <aside id="cartPanel">
+        <div class="cart-header">
+            <h2>Tu carrito</h2>
+            <button id="closeCart" class="close-cart">Cerrar</button>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-footer">
+            <p>Total: $<span id="cartTotal">0</span></p>
+            <button id="checkoutBtn" class="checkout-btn">Finalizar compra</button>
+        </div>
+    </aside>
+
+    <footer> 
+        <h2>DF DEPORTES</h2>
+        <p>Av. Siempre Viva 550</p>
+        <p>+54 9 351 3325737</p>
+    </footer>
+
+    <script src="cargarproductos.js"></script>
+</body>
+</html>
