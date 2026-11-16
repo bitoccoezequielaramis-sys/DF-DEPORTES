@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DF DEPORTES</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a class="brand" href="index.html" aria-label="DF Deportes, inicio">
+                <img class="brand-logo" src="logo-largo-transparente.png" alt="Logo de DF Deportes">
+            </a>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <a class="cart-btn" href="carrito.html">Carrito (<span id="cartCount">0</span>)</a>
+        </div>
+    </header>
+
+    <main id="boxproductos"></main>
+
+    <footer> 
+        <img class="footer-logo" src="logo-largo-transparente.png" alt="DF Deportes">
+        <p>Av. Siempre Viva 550</p>
+        <p>+54 9 351 3325737</p>
+    </footer>
+
+    <script src="firebase-config.js"></script>
+    <script src="firebase-rest.js"></script>
+    <script src="cargarproductos.js"></script>
+</body>
+</html>

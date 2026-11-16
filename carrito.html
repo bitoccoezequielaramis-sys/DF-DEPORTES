@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DF DEPORTES - Tu carrito</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <a class="brand" href="index.html" aria-label="DF Deportes, inicio">
+            <img class="brand-logo" src="logo-largo-transparente.png" alt="Logo de DF Deportes">
+        </a>
+        <div class="header-left">
+            <h1>Tu carrito</h1>
+            <p>Revisa los productos antes de continuar</p>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Seguir comprando</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <section id="cartItems" class="cart-page-items" aria-live="polite"></section>
+        <section class="cart-summary">
+            <p>Productos: <span id="cartCount">0</span></p>
+            <p class="cart-total">Total: $<span id="cartTotal">0</span></p>
+            <button id="checkoutBtn" class="checkout-btn" type="button">Finalizar compra</button>
+            <p id="checkoutMessage" class="cart-message" role="status"></p>
+        </section>
+    </main>
+
+    <footer>
+        <img class="footer-logo" src="logo-largo-transparente.png" alt="DF Deportes">
+        <p>Av. Siempre Viva 550</p>
+        <p>+54 9 351 3325737</p>
+    </footer>
+
+    <script src="carrito-page.js"></script>
+</body>
+</html>
